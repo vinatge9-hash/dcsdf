@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Savory Haven - Fine Dining Restaurant</title>
+  <meta name='description' content=' Savory Haven offers an elevated dining experience with seasonal, locally sourced ingredients and a refined ambiance.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='font-sans'>
+  <!-- Header / Navigation -->
+  <header>
+    <nav class='bg-white shadow-lg'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-between items-center h-16'>
+          <div class='flex-shrink-0'>
+            <a href='index.html' class='text-2xl font-bold text-gray-800'>Savory Haven</a>
+          </div>
+          <div class='hidden md:flex'>
+            <div class='ml-10 flex items-baseline space-x-4'>
+              <a href='index.html' class='text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium'>Home</a>
+              <a href='index.html#menu' class='text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium'>Menu</a>
+              <a href='about.html' class='text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium'>About</a>
+              <a href='contact.html' class='text-gray-600 hover:text-gray-800 px-3 py-2 rounded-md text-sm font-medium'>Contact</a>
+            </div>
+          </div>
+          <div class='md:hidden'>
+            <button id='mobile-menu-button' class='text-gray-800 hover:text-gray-600 focus:outline-none'>Menu</button>
+          </div>
+        </div>
+      </div>
+      <div id='mobile-menu' class='hidden md:hidden'>
+        <div class='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
+          <a href='index.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'>Home</a>
+          <a href='index.html#menu' class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'>Menu</a>
+          <a href='about.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'>About</a>
+          <a href='contact.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'>Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section with Background Image -->
+    <section class='relative min-h-screen bg-center bg-cover' data-bg='https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8ZWxlZ2FudCUyMHJlc3RhdXJhbnQlMjBkaW5pbmclMjByb29tJTIwd2l0aCUyMHdhcm0lMjBsaWdodGluZyUyMGFuZCUyMGJlYXV0aWZ1bGx5JTIwc2V0JTIwdGFibGVzfGVufDB8MHx8fDE3NTk0MjgwNjF8MA&ixlib=rb-4.1.0&q=80&w=1080' aria-label='Hero'>
+      <div class='absolute inset-0 bg-black opacity-60'></div>
+      <div class='relative z-10 max-w-4xl mx-auto px-4 text-center py-40'>
+        <h1 class='font-[Playfair Display] text-white text-4xl md:text-6xl font-bold mb-4'>Savory Haven</h1>
+        <p class='text-white text-lg md:text-xl mb-8'>Experience refined dining with seasonal, locally sourced ingredients crafted by our renowned chef.</p>
+        <div class='flex flex-col md:flex-row gap-4 justify-center'>
+          <a href='index.html#menu' class='bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300'>View Menu</a>
+          <a href='contact.html' class='border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300'>Reserve</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Teaser -->
+    <section id='menu' class='py-20 bg-white'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6'>
+        <h2 class='font-[Inter] text-3xl md:text-4xl font-semibold text-gray-800 mb-6'>Signature Dishes</h2>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <article class='bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition-all duration-300'>
+            <img src='https://pixabay.com/get/gec52717fc85da298f67e784fa703b4a0888972b4bc501973a14a1f7a746fe05188ab2686495c8c5b5df7cafe87859d70_640.jpg' alt='Seared scallops with citrus beurre blanc' class='w-full h-48 object-cover'>
+            <div class='p-4'>
+              <h3 class='font-[Playfair Display] text-xl mb-2'>Seared Scallops with Citrus Beurre Blanc</h3>
+              <p class='text-gray-700'>Delicately seared scallops finished with a bright citrus butter and seasonal greens.</p>
+            </div>
+          </article>
+
+          <article class='bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition-all duration-300'>
+            <img src='https://pixabay.com/get/gcbfb5afe35e3d587753a69eec373067beb488722f4726fdbab12ee64d02a89cb24a9fb05e8ed1944bb0f1c21ea1697f253bf6abe500fb942eac92880de3b37f3_640.jpg' alt='Heritage beef medallions' class='w-full h-48 object-cover'>
+            <div class='p-4'>
+              <h3 class='font-[Playfair Display] text-xl mb-2'>Heritage Beef Medallions</h3>
+              <p class='text-gray-700'>Tender beef medallions, red wine reduction, and truffle mashed potatoes.</p>
+            </div>
+          </article>
+
+          <article class='bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition-all duration-300'>
+            <img src='https://pixabay.com/get/gf38d4d0fcff48320f73538ef0d931c4fe2534bb435638222055d65fd7376c0082dc18a53bf207fc1036d35aee8bbd7d9397477a263c79ac2101e22151106c1b5_640.jpg' alt='Garden herb vegetable risotto' class='w-full h-48 object-cover'>
+            <div class='p-4'>
+              <h3 class='font-[Playfair Display] text-xl mb-2'>Garden Herb Vegetable Risotto</h3>
+              <p class='text-gray-700'>A creamy risotto with market vegetables and a kiss of citrus zest.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Story Preview -->
+    <section class='py-12 bg-gray-100'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <div class='md:flex md:items-center md:gap-8'>
+          <div class='md:w-1/2'>
+            <h2 class='font-[Inter] text-2xl md:text-3xl font-semibold text-gray-800 mb-3'>Our Story</h2>
+            <p class='text-gray-700 leading-relaxed'>Savory Haven was born from a desire to celebrate seasonality and culinary craft. We partner with local farms and respected purveyors to deliver elegant, deeply flavorful dishes in a warm, understated setting.</p>
+          </div>
+          <div class='md:w-1/2 mt-6 md:mt-0'>
+            <img src='https://images.pexels.com/photos/8093965/pexels-photo-8093965.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Chef in the kitchen preparing a dish' class='w-full rounded-lg shadow'>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class='py-12'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h2 class='text-2xl md:text-3xl font-semibold text-gray-800 mb-6'>What Guests Are Saying</h2>
+        <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+          <blockquote class='p-6 bg-white rounded-lg shadow'>
+            <p class='text-gray-700'>"An extraordinary dining experience from start to finish. The attention to detail is remarkable."</p>
+            <footer class='mt-2 text-sm text-gray-500'>- A Food Lover, VisitJSON</footer>
+          </blockquote>
+          <blockquote class='p-6 bg-white rounded-lg shadow'>
+            <p class='text-gray-700'>"The seasonal flavors and warm service make Savory Haven our family favorite."</p>
+            <footer class='mt-2 text-sm text-gray-500'>- Happy Guest</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class='py-12 bg-white'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h2 class='text-2xl md:text-3xl font-semibold text-gray-800 mb-6'>Gallery</h2>
+        <div class='grid grid-cols-1 sm:grid-cols-3 gap-4'>
+          <img src='https://images.pexels.com/photos/9012594/pexels-photo-9012594.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Dessert plate' class='w-full h-48 object-cover rounded'>
+          <img src='https://images.unsplash.com/photo-1603661693143-250bdff8c6c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHx3aW5lJTIwYW5kJTIwY2hhcmN1dGVyaWUlMjBib2FyZHxlbnwwfDB8fHwxNzU5NDI4MDY2fDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Wine with charcuterie' class='w-full h-48 object-cover rounded'>
+          <img src='https://pixabay.com/get/gf51915ce6fbcb6aa5bea998ae947d0b1347ac35fd6a2af649a84eee76cd82f0ce69142445cec12b89d76ba4f0f19bbba_640.jpg' alt='Cozy dining room' class='w-full h-48 object-cover rounded'>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style='background-color:#8B4513; color:white;' class='pt-12'>
+    <div class='max-w-7xl mx-auto px-4'>
+      <div class='grid grid-cols-1 md:grid-cols-4 gap-8'>
+        <!-- Brand/About -->
+        <div>
+          <h4 class='text-xl font-semibold mb-2' style='color:#FFD89D'>Savory Haven</h4>
+          <p class='text-gray-200'>Elegant dining focused on seasonal ingredients, cultivated by a passionate team in a refined setting.</p>
+        </div>
+        <!-- Contact Info -->
+        <div>
+          <h4 class='text-lg font-semibold mb-2'>Contact</h4>
+          <p class='text-gray-200'>123 Culinary Street, Downtown District</p>
+          <p class='text-gray-200'>Phone: (555) 123-4567</p>
+          <p class='text-gray-200'>Email: hello@savoryhaven.com</p>
+        </div>
+        <!-- Hours -->
+        <div>
+          <h4 class='text-lg font-semibold mb-2'>Hours</h4>
+          <p class='text-gray-200'>Mon–Thu: 5:00 PM – 10:00 PM</p>
+          <p class='text-gray-200'>Fri–Sat: 5:00 PM – 11:00 PM</p>
+          <p class='text-gray-200'>Sun: 4:00 PM – 9:00 PM</p>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h4 class='text-lg font-semibold mb-2'>Links</h4>
+          <ul class='space-y-2'>
+            <li><a href='index.html' class='text-gray-200 hover:text-white'>Home</a></li>
+            <li><a href='about.html' class='text-gray-200 hover:text-white'>About</a></li>
+            <li><a href='index.html#menu' class='text-gray-200 hover:text-white'>Menu</a></li>
+            <li><a href='contact.html' class='text-gray-200 hover:text-white'>Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class='border-gray-700 my-8 opacity-50'>
+      <div class='flex flex-col md:flex-row justify-between items-center pb-4'>
+        <p class='text-gray-300 text-sm'>© 2025 Savory Haven. All rights reserved.</p>
+        <div class='flex space-x-4'>
+          <a href='#' class='text-gray-300 hover:text-white text-sm'>Privacy</a>
+          <a href='#' class='text-gray-300 hover:text-white text-sm'>Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tiny script to apply hero background image from data-bg -->
+  <script>
+    (function(){
+      var hero = document.querySelector('[data-bg]');
+      if (hero) {
+        var bg = hero.getAttribute('data-bg');
+        if (bg) {
+          hero.style.backgroundImage = "url('" + bg + "')";
+          hero.style.backgroundSize = 'cover';
+          hero.style.backgroundPosition = 'center';
+        }
+      }
+      // Mobile menu toggle
+      var btn = document.getElementById('mobile-menu-button');
+      var menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', function(){
+          menu.classList.toggle('hidden');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
